@@ -5,17 +5,16 @@ body, html {
 }
 
 header {
-  height:140px;
+  border-bottom: 12px outset rgb(214, 211, 211);
+  height:120px;
   width:100%;
   overflow:hidden;
-  /* background-color: #cccccc; */
   display: inline-block;
 }
 
 #logocard {
   width:30%;
   height:100%;
-  /* background-color: red; */
   float:left;
 }
 
@@ -45,7 +44,6 @@ header {
 .links {
   width:30%;
   height:100%;
-  /* background-color:#008000; */
   float:right;
   position: relative; top:55px;
 }
@@ -71,14 +69,14 @@ header {
 }
 
 #timestampheader{
-  margin-top:.8em;
-  width:100%;
-  overflow:hidden;
-  /* background-color: #856666; */
+  color: rgb(120,120,120);
   display: inline-block;
   font-size:.8em;
   font-family: 'Oswald', sans-serif;
-  color: rgb(120,120,120)
+  margin-top:.8em;
+  width:100%;
+  overflow:hidden;
+
 }
 
 #timestamp{
@@ -116,31 +114,62 @@ header {
 }
 
 section.ingredients img {
-  margin-top: 12.5px;
-  position: relative;
+  border-bottom: 12px outset rgb(214, 211, 211);
+  margin: 30px 0;
+  padding-bottom: 30px;
+  /* position: relative; */
   width: 960px;
 }
 
 .ingredients div {
   font-family: 'IBM Plex Serif', serif;
   color: rgb(80,80,80);
-  font-size:1.12em;
+  font-size: 20px;
+  width: 960px;
 }
 
 .ingredients div#recipieL {
-  position: absolute;
-  top: 1325px; left: 220px;
+  position: relative;
+  top: -355px; left: 60px;
+  width: 50%;
 }
 
 .ingredients div#recipieR {
-  position: absolute;
-  top: 1325px; left: 650px;
+  position: relative;
+  top: -540px; left: 480px;
+  width: 50%;
 }
 
-.ingredients li {
-  margin-bottom: 15px;
+.ingredients #twoL, #threeL, #fourL, #fiveL, #sixL {
+  margin-top: 18px;
+}
+
+.ingredients #twoR, #threeR, #fourR, #fiveR, #sixR {
+  margin-top: 18px;
 }
 
 .strikethrough:checked + .strikeThis {
   text-decoration: line-through
 }
+
+.author #vanpic {
+  float: left;
+}
+
+.author .author-info {
+  color: rgb(80,80,80);
+  display: inline-block;
+  font-family: 'IBM Plex Serif', serif;
+  margin-left: 25px;
+  width: 600px;
+}
+
+.author .author-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.author .author-info p {
+  font-size: 16px;
+}
+
