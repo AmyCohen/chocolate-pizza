@@ -1,21 +1,20 @@
-body, html {
- margin:auto;
- display:block;
- width:85%;
+body {
+ margin: auto;
+ display: block;
+ width: 960px;
 }
 
 header {
-  height:140px;
+  border-bottom: 12px outset rgb(214, 211, 211);
+  height:120px;
   width:100%;
   overflow:hidden;
-  /* background-color: #cccccc; */
   display: inline-block;
 }
 
 #logocard {
   width:30%;
   height:100%;
-  /* background-color: red; */
   float:left;
 }
 
@@ -23,10 +22,8 @@ header {
   height:100%;
   width:42px;
   float:left;
-  /* background-color:blue; */
 }
 #logo {
-  /* vertical-align: middle; */
   position: relative; top:49px;
   display: inline;
 }
@@ -44,28 +41,26 @@ header {
   font-size:.7em;
 }
 
-
 .links {
-  width:30%;
   height:100%;
-  /* background-color:#008000; */
   float:right;
   position: relative; top:55px;
 }
 
-.links li {
-  float:right;
-  padding: 2px;
+nav.links {
+  float: right;
 }
 
-#infonav {
-  margin-left:5px;
-  padding-left: 5px;
-  /* background-color: aqua */
+#socialnav ul {
+  margin-left: 20px;
+}
+#socialnav li {
+  display: inline-block;
+  padding-left: 2px;
 }
 
-#socialnav {
-  /* background-color: blueviolet */
+.infonav img {
+  margin-left: 5px;
 }
 
 .postbanner h2 {
@@ -76,14 +71,13 @@ header {
 }
 
 #timestampheader{
-  margin-top:.8em;
-  width:100%;
-  overflow:hidden;
-  /* background-color: #856666; */
+  color: rgb(120,120,120);
   display: inline-block;
   font-size:.8em;
   font-family: 'Oswald', sans-serif;
-  color: rgb(120,120,120)
+  margin-top:.8em;
+  width:100%;
+  overflow:hidden;
 }
 
 #timestamp{
@@ -95,6 +89,10 @@ header {
   float:right;
   width:20%;
   text-align:right;
+}
+
+#ipittytheprinta img {
+  margin-right: 2px;
 }
 
 #print {
@@ -120,6 +118,106 @@ header {
   padding-bottom:12.5px;
 }
 
+.ingredients {
+  height: 400px;
+}
+
+.ingredients img {
+  border-bottom: 12px outset rgb(214, 211, 211);
+  margin: 30px 0;
+  padding-bottom: 30px;
+  width: 960px;
+}
+
+.ingredients div {
+  font-family: 'IBM Plex Serif', serif;
+  color: rgb(80,80,80);
+  font-size: 20px;
+  width: 960px;
+}
+
+.ingredients div#recipieL {
+  position: relative;
+  top: -355px; left: 60px;
+  width: 50%;
+}
+
+.ingredients div#recipieR {
+  position: relative;
+  top: -540px; left: 480px;
+  width: 50%;
+}
+
+.ingredients #twoL, #threeL, #fourL, #fiveL, #sixL {
+  margin-top: 18px;
+}
+
+.ingredients #twoR, #threeR, #fourR, #fiveR, #sixR {
+  margin-top: 18px;
+}
+
 .strikethrough:checked + .strikeThis {
   text-decoration: line-through
+}
+
+.author {
+  height: 75px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.author #vanpic {
+  float: left;
+}
+
+.author .author-info {
+  color: rgb(80,80,80);
+  display: inline-block;
+  font-family: 'IBM Plex Serif', serif;
+  margin-left: 25px;
+  width: 600px;
+}
+
+.author .author-info h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.author .author-info p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.author #SRB {
+  color: rgb(253, 253, 253);
+  background-color: rgb(202, 96, 96);
+  float: right;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  width: 200px;
+}
+
+footer {
+  color:rgb(204, 204, 204);
+  margin-top: 3em;
+  position:relative;
+  text-align:center;
+}
+
+footer img {
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  margin-bottom: 20px;
+}
+
+footer:before {
+  border-top: 1px solid  rgb(204, 204, 204);
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  z-index: -1;
 }
